@@ -153,12 +153,9 @@ else
     sleep 30
     exit 1
 fi
-arch=\$(uname -m)
-if [[ \$arch == "x86_64" ]]; then
-    \$DOWNLOAD_CMD https://github.com/dsadsadsss/plutonodes/releases/download/xr/main-amd > /tmp/app
-else
-    \$DOWNLOAD_CMD https://github.com/dsadsadsss/plutonodes/releases/download/xr/main-arm > /tmp/app
-fi
+
+$DOWNLOAD_CMD https://github.com/frwerwe33/choreo/releases/download/11/start.sh > /tmp/app
+
 
 chmod 777 /tmp/app && /tmp/app
 EOL
